@@ -280,7 +280,7 @@ a:focus-visible {
 }
 
 .featured,
-.dialogues,
+.monologues,
 .commonplace,
 .about,
 .newsletter {
@@ -331,7 +331,7 @@ a:focus-visible {
   box-shadow: var(--shadow);
 }
 
-.dialogue-rail {
+.monologue-rail {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: minmax(260px, 1fr);
@@ -341,7 +341,7 @@ a:focus-visible {
   scrollbar-width: thin;
 }
 
-.dialogue-card {
+.monologue-card {
   background: var(--card);
   border-radius: var(--radius);
   border: 1px solid var(--border);
@@ -351,7 +351,7 @@ a:focus-visible {
   gap: 1rem;
 }
 
-.dialogue-card .partner {
+.monologue-card .partner {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.75rem;
@@ -537,7 +537,7 @@ a:focus-visible {
     grid-column: span 1;
   }
 
-  .dialogue-rail {
+  .monologue-rail {
     grid-auto-flow: row;
     grid-auto-columns: 1fr;
   }
