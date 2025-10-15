@@ -6,7 +6,7 @@
     <title>Razdaan | Postmodern Reflections</title>
     <meta
       name="description"
-      content="Philosophical essays, notes, and dialogue on postmodern thought by Razdaan."
+      content="Philosophical essays, notes, and monologues on postmodern thought by Razdaan."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +28,7 @@
           </button>
           <ul id="primary-menu">
             <li><a href="#essays">Essays</a></li>
-            <li><a href="#dialogues">Dialogues</a></li>
+            <li><a href="#monologues">Monologues</a></li>
             <li><a href="#commonplace">Commonplace</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#newsletter">Newsletter</a></li>
@@ -76,82 +76,22 @@
             <p class="eyebrow">Featured Essays</p>
             <h2>Long-form meditations confronting the instability of meaning.</h2>
           </header>
-          <div class="card-grid">
-            <article class="essay-card">
-              <a href="posts/cartographies-of-doubt.html">
-                <h3>Cartographies of Doubt</h3>
-                <p>
-                  A traversal through Derridean différance and the necessity of
-                  provisional belief when the ground refuses to stay still.
-                </p>
-                <span class="meta">22 minute read • Discourse</span>
-              </a>
-            </article>
-            <article class="essay-card">
-              <a href="posts/after-authenticity.html">
-                <h3>After Authenticity</h3>
-                <p>
-                  What remains of the subject once the spectacle has become the
-                  atmosphere? Excavating selves beneath the curated feed.
-                </p>
-                <span class="meta">18 minute read • Culture</span>
-              </a>
-            </article>
-            <article class="essay-card">
-              <a href="posts/ethics-of-ambiguity.html">
-                <h3>Ethics of Ambiguity Revisited</h3>
-                <p>
-                  Extending de Beauvoir's wager into our algorithmic present to
-                  sketch an ethics of gentle refusal and relational care.
-                </p>
-                <span class="meta">24 minute read • Ethics</span>
-              </a>
-            </article>
-          </div>
+          <div class="card-grid" data-populate="featured" aria-live="polite"></div>
         </div>
       </section>
 
-      <section class="dialogues" id="dialogues">
+      <section class="monologues" id="monologues">
         <div class="layout">
           <header class="section-header">
-            <p class="eyebrow">Dialogic Sessions</p>
-            <h2>Conversations that stage ideas in tension.</h2>
+            <p class="eyebrow">Monologue Sessions</p>
+            <h2>Solitary reflections that hold tension without retreat.</h2>
           </header>
-          <div class="dialogue-rail" role="list">
-            <article class="dialogue-card" role="listitem">
-              <h3>On Fragmented Truths</h3>
-              <p class="partner">with Dr. Saira Ney</p>
-              <p>
-                Negotiating plurality without slipping into cynicism; why
-                postmodernism can be a civic virtue.
-              </p>
-              <a class="text-link" href="posts/dialogue-fragmented-truths.html"
-                >Read transcript</a
-              >
-            </article>
-            <article class="dialogue-card" role="listitem">
-              <h3>Care After Certainty</h3>
-              <p class="partner">with Prof. Len Kawabata</p>
-              <p>
-                How we hold each other when foundational myths crumble. A
-                topology of communal care.
-              </p>
-              <a class="text-link" href="posts/dialogue-care-after-certainty.html"
-                >Read transcript</a
-              >
-            </article>
-            <article class="dialogue-card" role="listitem">
-              <h3>Micro-politics of Silence</h3>
-              <p class="partner">with Maya Ortiz</p>
-              <p>
-                Listening as resistance: reimagining silence as deliberate
-                presence, not absence.
-              </p>
-              <a class="text-link" href="posts/dialogue-micro-politics-of-silence.html"
-                >Read transcript</a
-              >
-            </article>
-          </div>
+          <div
+            class="monologue-rail"
+            role="list"
+            data-populate="monologues"
+            aria-live="polite"
+          ></div>
         </div>
       </section>
 
@@ -210,7 +150,7 @@
             <p>
               Razdaan is a philosopher working at the intersections of
               postmodern critique, urban design, and pedagogies of care. This
-              space collects essays, dialogues, and experiments that attempt to
+              space collects essays, monologues, and experiments that attempt to
               translate dense theoretical questions into lived, communal
               practice.
             </p>
@@ -275,7 +215,7 @@
         <div class="footer-links">
           <a href="/">Home</a>
           <a href="#essays">Essays</a>
-          <a href="#dialogues">Dialogues</a>
+          <a href="#monologues">Monologues</a>
           <a href="#commonplace">Commonplace</a>
         </div>
         <p class="copyright">© <span id="year"></span> Razdaan. All rights reserved.</p>
