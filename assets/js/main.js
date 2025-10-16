@@ -88,14 +88,28 @@ const formatDate = (value) =>
 
 const formatMinutes = (minutes) => `${minutes} min read`;
 
+const getInlineBlogs = () => {
+  const el = document.getElementById("blogs-data");
+  if (!el) return null;
+  try {
+    return JSON.parse(el.textContent || "");
+  } catch (e) {
+    console.error("Invalid inline blogs JSON", e);
+    return null;
+  }
+};
+
 const populateBlogs = async () => {
   const container = document.querySelector('[data-populate="blogs"]');
   if (!container) return;
   container.innerHTML = "";
   try {
-    const res = await fetch("posts/index.json", { cache: "no-store" });
-    if (!res.ok) throw new Error(`Failed to load posts manifest: ${res.status}`);
-    const items = await res.json();
+    const inline = getInlineBlogs();
+    const items = inline ?? (await (async () => {
+      const res = await fetch("posts/index.json", { cache: "no-store" });
+      if (!res.ok) throw new Error(`Failed to load posts manifest: ${res.status}`);
+      return res.json();
+    })());
     items
       .sort((a, b) => toDate(b.published) - toDate(a.published))
       .forEach((entry) => {
