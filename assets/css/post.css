@@ -25,6 +25,11 @@
   max-width: 700px;
 }
 
+.post-body .lede {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
 .post-body h2 {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
@@ -45,6 +50,18 @@
 .post-body p {
   margin: 0;
   font-size: 1.05rem;
+}
+
+.post-body ul,
+.post-body ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.post-body li {
+  margin: 0;
 }
 
 .post-footer {

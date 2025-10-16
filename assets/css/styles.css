@@ -16,10 +16,6 @@
   --bg: #0f0e11;
   --bg-alt: #17161a;
   --text: #f2efe9;
-  --muted: #b5b0a6;
-  --accent: #f0914c;
-  --accent-soft: rgba(240, 145, 76, 0.12);
-  --card: #1f1d24;
   --border: #2e2c36;
   --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
 }
@@ -105,6 +101,10 @@ a:focus-visible {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 500;
+}
+
+.primary-nav a.active {
+  color: var(--accent);
 }
 
 .primary-nav a:hover,
@@ -280,6 +280,7 @@ a:focus-visible {
 }
 
 .featured,
+.latest,
 .monologues,
 .commonplace,
 .about,
@@ -329,6 +330,46 @@ a:focus-visible {
 .essay-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow);
+}
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.6rem;
+}
+
+.latest-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 1.8rem;
+  display: grid;
+  gap: 1rem;
+  min-height: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.latest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.latest-card h3 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+}
+
+.latest-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.latest-card .meta {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
 }
 
 .monologue-rail {
@@ -577,6 +618,10 @@ a:focus-visible {
   .primary-nav ul {
     right: 0;
     inset-inline-start: auto;
+  }
+
+  .latest-grid {
+    grid-template-columns: 1fr;
   }
 }
 
