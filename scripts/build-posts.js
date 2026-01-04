@@ -23,7 +23,8 @@ const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.txt'));
 const posts = files.map(filename => {
   const filepath = path.join(postsDir, filename);
   const content = fs.readFileSync(filepath, 'utf-8');
-  const lines = content.split('\n');
+  const normalized = content.replace(/\r\n/g, '\n');
+  const lines = normalized.split('\n');
   
   // First line is the title
   const title = lines[0].trim();
