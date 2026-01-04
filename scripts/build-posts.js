@@ -27,12 +27,10 @@ const posts = files.map(filename => {
   
   // First line is the title
   const title = lines[0].trim();
+  // Second line is the date (format: YYYY-MM-DD)
+  const date = lines[1].trim();
   // Rest is the content
-  const body = lines.slice(1).join('\n').trim();
-  
-  // Get file stats for date
-  const stats = fs.statSync(filepath);
-  const date = stats.mtime.toISOString().split('T')[0];
+  const body = lines.slice(2).join('\n').trim();
   
   // Create slug from filename (remove .txt)
   const slug = filename.replace('.txt', '').toLowerCase().replace(/\s+/g, '-');
