@@ -4,37 +4,43 @@ export function AboutPage() {
   return (
     <div className="about container fade-in">
       <div className="about-content">
-        <p>
-          Welcome to Razdaan, a space for philosophical reflection and contemplation. 
-          Here, I explore questions that have fascinated humanity for millennia—questions 
-          about meaning, existence, consciousness, and the art of living well.
-        </p>
-        
-        <p>
-          Philosophy, at its best, is not an academic exercise but a way of life. 
-          These essays are invitations to think deeply, to question assumptions, 
-          and to engage with ideas that matter.
-        </p>
+  <p>
+    Welcome to <strong>Razdaan</strong>—a quiet corner for thinking slowly in an age
+    that rewards speed. This space grew out of a restlessness with easy answers:
+    about knowledge and its limits, about intelligence—human and artificial—about
+    meaning in a world that often feels over-optimized and under-understood.
+  </p>
 
-        <h2>The Name</h2>
-        <p>
-          "Razdaan" carries within it the essence of gifting secrets, of sharing 
-          hidden wisdom. Each essay here is an offering—a small piece of meaning 
-          uncovered and shared.
-        </p>
+  <p>
+    Much of what I write lives at the intersections: philosophy and computation,
+    entropy and order, algorithms and agency, faith and doubt. These are not abstract
+    puzzles to me, but questions that surface while studying systems, building models,
+    reading poetry, or simply paying attention to how life resists neat explanations.
+  </p>
 
-        <h2>The Approach</h2>
-        <p>
-          I believe philosophy should be accessible. While I draw on ancient wisdom 
-          and contemporary thought, these essays aim to speak to lived experience. 
-          No jargon for its own sake. No obscurity mistaken for depth.
-        </p>
-        
-        <p>
-          If something here resonates with you, or provokes you to disagree, 
-          it has done its work.
-        </p>
-      </div>
+  <h2>The Name</h2>
+  <p>
+    <em>Razdaan</em> literally means “the giver of secrets.” Not secrets as final truths,
+    but as glimpses—partial, fragile, and provisional. Each essay here is an attempt
+    to open a small box: sometimes it contains an idea from information theory,
+    sometimes a philosophical doubt, sometimes a line of thought that refuses to
+    resolve cleanly.
+  </p>
+
+  <h2>The Approach</h2>
+  <p>
+    I don’t see philosophy as something confined to departments or footnotes.
+    It is closer to a discipline of attention: a way of thinking carefully about
+    systems, assumptions, and the stories we tell ourselves. I draw from philosophy, 
+    contemporary thinkers, and technical work in AI and networks,
+    but I try to write in a way that remains human.
+  </p>
+
+  <p>
+    If something here unsettles you, slows you down, or helps you name a thought
+    you’ve been circling for a while, then it has done what it was meant to do.
+  </p>
+</div>
     </div>
   );
 }
