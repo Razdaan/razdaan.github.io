@@ -39,7 +39,7 @@ export function PostPage() {
         <p>This essay could not be found.</p>
         <Link to="/" className="back-link">
           <ArrowLeft />
-          Return to essays
+          Return to posts
         </Link>
       </div>
     );
@@ -52,7 +52,7 @@ export function PostPage() {
     <article className="post container fade-in">
       <Link to="/" className="back-link">
         <ArrowLeft />
-        Back to essays
+        Back to posts
       </Link>
       
       <header className="post-header">

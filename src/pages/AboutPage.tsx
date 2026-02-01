@@ -5,41 +5,39 @@ export function AboutPage() {
     <div className="about container fade-in">
       <div className="about-content">
   <p>
-    Welcome to <strong>Razdaan</strong>—a quiet corner for thinking slowly in an age
-    that rewards speed. This space grew out of a restlessness with easy answers:
-    about knowledge and its limits, about intelligence—human and artificial—about
-    meaning in a world that often feels over-optimized and under-understood.
-  </p>
+    I am <strong>Ashar Nasir</strong>.
+</p>
 
-  <p>
-    Much of what I write lives at the intersections: philosophy and computation,
-    entropy and order, algorithms and agency, faith and doubt. These are not abstract
-    puzzles to me, but questions that surface while studying systems, building models,
-    reading poetry, or simply paying attention to how life resists neat explanations.
-  </p>
+<p>
+    I build computational models to understand life, and I write to understand living.
+</p>
 
-  <h2>The Name</h2>
-  <p>
-    <em>Razdaan</em> literally means “the giver of secrets.” Not secrets as final truths,
-    but as glimpses—partial, fragile, and provisional. Each essay here is an attempt
-    to open a small box: sometimes it contains an idea from information theory,
-    sometimes a philosophical doubt, sometimes a line of thought that refuses to
-    resolve cleanly.
-  </p>
+<p>
+    <strong>Razdaan</strong> is my attempt to trace these patterns, not just in the 
+    code I write, but in the silence between the lines.
+</p>
+</div>
 
-  <h2>The Approach</h2>
-  <p>
-    I don’t see philosophy as something confined to departments or footnotes.
-    It is closer to a discipline of attention: a way of thinking carefully about
-    systems, assumptions, and the stories we tell ourselves. I draw from philosophy, 
-    contemporary thinkers, and technical work in AI and networks,
-    but I try to write in a way that remains human.
-  </p>
 
-  <p>
-    If something here unsettles you, slows you down, or helps you name a thought
-    you’ve been circling for a while, then it has done what it was meant to do.
-  </p>
+<div dir="rtl" lang="ur" style={{ fontFamily: "'Noto Nastaliq Urdu', serif", lineHeight: 1.8 }}>
+    <p>
+        میں <strong>اشعر ناصر</strong> ہوں۔
+    </p>
+
+    <p>
+        میں زندگی (Life) کے نظام کو سمجھنے کے لیے کمپیوٹیشنل ماڈل بناتا ہوں، اور جینے (Living) کے اسرار کو سمجھنے کے لیے لکھتا ہوں۔
+    </p>
+
+    <p>
+        میرا کام تعین اور اتفاق (Order and Randomness) کے اس سنگم پر ہے جہاں چیزیں واضع نہیں ہوتیں۔ 
+        چاہے وہ سماجی نظاموں کی بے یقینی (Stochastic Systems) ہو، فطرت اور تربیت (Nature vs Nurture) کی قدیم کشمکش، 
+        یا شعور (Consciousness) کا معمہ—میری جستجو ان 'پوشیدہ عوامل' کی تلاش ہے جو ہماری ہستی پر حکمرانی کرتے ہیں۔
+    </p>
+
+    <p>
+        <strong>'رازداں'</strong> انہی نقوش کو پا لینے کی ایک کوشش ہے—صرف اس کوڈ میں نہیں جو میں لکھتا ہوں، 
+        بلکہ ان خاموشیوں میں جو الفاظ کے درمیان بستی ہیں۔
+    </p>
 </div>
     </div>
   );
@@ -51,7 +49,7 @@ export function NotFoundPage() {
       <h1>404</h1>
       <p>The page you're looking for doesn't exist.</p>
       <Link to="/" className="back-link">
-        Return to essays
+        Return to posts
       </Link>
     </div>
   );

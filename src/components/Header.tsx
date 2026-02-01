@@ -14,7 +14,7 @@ export function Header() {
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             end
           >
-            Essays
+            Posts
           </NavLink>
           <NavLink 
             to="/about" 
