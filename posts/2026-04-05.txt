@@ -1,4 +1,4 @@
-Convergent Evolution of Information: 
+Dynamics & Convergent Evolution of Information: 
 2026-04-05
 When I was new to computational biology, my masters thesis supervisor casually mentioned that nature contains mechanisms that look almost offensively “engineered”: a motor on a bacterium, assembly-like protein complexes, feedback controllers that resemble circuits. The remark was made to simply imply that the objective function is the same.
 
